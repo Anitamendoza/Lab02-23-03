@@ -1,0 +1,57 @@
+﻿<Window x:Class="Lab2.Salidas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="Salidas" Height="450" Width="800">
+    <Grid>
+        <GroupBox Header="Registro de Salidas">
+            <Grid>
+                <Grid.Resources>
+                    <Style TargetType="Label">
+                        <Setter Property="Foreground" Value="Black"/>
+                        <Setter Property="FontSize" Value="14"/>
+                        <Setter Property="Margin" Value="5"/>
+                    </Style>
+                </Grid.Resources>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Tipo de documento:" Grid.Row="0"/>
+                <TextBox Grid.Row="0" TextChanged="TextBox_TextChanged"/>
+
+                <Label Content="Número de documento:" Grid.Row="1"/>
+                <TextBox Grid.Row="1"/>
+
+                <Label Content="Peso:" Grid.Row="2"/>
+                <TextBox Grid.Row="2"/>
+
+                <Label Content="Tipo de auto:" Grid.Row="3"/>
+                <TextBox Grid.Row="3"/>
+
+                <Label Content="Nombre del transportista:" Grid.Row="4"/>
+                <TextBox Grid.Row="4"/>
+
+                <Label Content="Fecha y hora:" Grid.Row="5"/>
+                <TextBox Grid.Row="5"/>
+
+                <Label Content="Peso de ingreso:" Grid.Row="6"/>
+                <TextBox Grid.Row="6" TextChanged="TextBox_TextChanged"/>
+
+                <Label Content="Peso de salida:" Grid.Row="7"/>
+                <TextBox Grid.Row="7"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
